@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random CSS Grid With Media Queries Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <div class="mode">
+        <select name="mode" id="mode">
+            <option selected value="simple">Simple Responsive Mode</option>
+            <option value="section">Single Section Mode</option>
+            <option value="web">Full Page Layout Mode</option>
+        </select>
+    </div>
+    <div class="options simple">
+        <div>
+            <label for="items">Number of items</label>
+            <input type="number" name="items" id="items" min="1" value="4">
+        </div>
+        <div>
+            <label for="column-gap">Column Gap</label>
+            <input type="number" name="column-gap" id="column-gap" min="0" value="2" step="0.3">
+        </div>
+        <div>
+            <label for="row-gap">Row Gap</label>
+            <input type="number" name="row-gap" id="row-gap" min="0" value="2" step="0.3">
+        </div>
+        <div>
+            <label for="items-border-radius">Items Border Radius</label>
+            <input type="number" name="items-border-radius" id="items-border-radius" min="0" value="0" step="0.3">
+        </div>
+
+        <div class="col-span-2">
+            <label for="populate">Fill item container with random images (will take a bit)</label>
+            <input type="checkbox" name="populate" id="populate">
+        </div>
+        <div class="col-span-2">
+            <label for="auto-property">Leave columns spacing</label>
+            <input type="checkbox" name="auto-property" id="auto-property">
+        </div>
+        <div>
+            <button class="simple-generate">Generate</button>
+        </div>
+    </div>
+    <div class="coming-soon hidden">
+        <h1>Feature Coming Soon &lt;3 </h1>
+    </div>
+    <div class="output">
+
+    </div>
+    <div class="codepen">
+        <form action="https://codepen.io/pen/define" method="POST" target="_blank">
+            <input type="hidden" name="data">
+            <button type="submit" class="hidden codepenbtn">My Code</button>
+        </form>
+    </div>
+    <div class="text">
+        <h1>Random CSS Grid With Media Queries Generator</h1>
+        <p>A responsive random CSS grid generator for the confused and out of ideas developers. You can view, edit and
+            copy the
+            code from
+            codepen. You can change the values to your taste by default the values are in rem and this page html
+            {font-size: 62.5%;} is defined so (1rem = 10px) by default it would be (1rem = 16px). Hope you find this
+            generator somehow useful. Thanks.</p>
+    </div>
+    <div class="opps">
+        <h1>Not Available On Phone</h1>
+    </div>
+</body>
+
+</html>
